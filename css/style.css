@@ -1058,10 +1058,10 @@ figure figcaption {
   flex-direction: column;
   align-items: center;
   transition: 0.5s;
+  color: #fff;
 }
 .card .info h2 {
   margin: 0px;
   padding-bottom: 20px;
-  color: #fff;
 }
 
