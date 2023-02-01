@@ -52,6 +52,14 @@ body:after {
 .mar0 {margin: 0px!important;}
 .marbot70 {margin-bottom: 70px;}
 .marbot10 {margin-bottom: 10px!important;}
+.mar-tb-70 {margin: auto;}
+  @media (max-width: 991.98px) {
+    .mar-tb-70 {margin: 70px 0;}
+  }
+  @media (max-width: 425px) {
+    .mar-tb-70 {margin: auto -15px;}
+  }
+
 
 .offcanvas-menu {
   position: relative; }
@@ -74,13 +82,13 @@ body:after {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   .btn.btn-primary {
-    background: #f8a42a;
-    border-color: #f8a42a;
-    color: #fff; }
-    .btn.btn-primary:hover {
       background: #000;
       border-color: #000;
       color: #fff; }
+    .btn.btn-primary:hover {
+    background: #f8a42a;
+    border-color: #f8a42a;
+    color: #fff; }
     .btn.btn-primary.btn-black--hover:hover {
       background: #666666;
       color: #fff; }
@@ -585,7 +593,7 @@ body:after {
   overflow: hidden;
   position: relative; }
   .site-blocks-cover .lead, .site-blocks-cover p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff; }
   .site-blocks-cover.overlay {
     position: relative; }
@@ -599,7 +607,27 @@ body:after {
     position: relative;
     z-index: 2; }
   .site-blocks-cover h1 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-weight: bold; }
+    @media (max-width: 425px) {
+      .site-blocks-cover h1 {
+        font-size: 2.5rem;
+      }
+    }
+  .hide1 {
+    display: none;
+  }
+  .hide2 {
+    display: block;
+  }
+  @media (max-width: 991px) {
+    .hide1 {
+      display: block;
+    }
+    .hide2 {
+      display: none;
+    }
+  }
   .site-blocks-cover .img-face {
     width: 100%;
     position: absolute;
@@ -614,6 +642,17 @@ body:after {
         -webkit-transform: translate(-70%, -50%);
         -ms-transform: translate(-70%, -50%);
         transform: translate(-70%, -50%); } }
+    @media (max-width: 991px) {
+      .site-blocks-cover .img-face {
+        width: auto;
+        left: 136%;
+        }
+      }
+    @media (max-width: 425px) {
+      .site-blocks-cover .img-face {
+        left: 200%;
+        }
+      }
 
 .section-title {
   position: relative; }
@@ -647,6 +686,11 @@ body:after {
   transition: .3s all ease-in-out;
   top: 0;
   position: relative; }
+  @media (max-width: 425px) {
+    .service {
+      padding: 20px 5px;
+    }
+  }
   .service:hover {
     -webkit-box-shadow: 0 8px 50px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 8px 50px -5px rgba(0, 0, 0, 0.1);
